@@ -7,18 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@color/white">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/my_toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:titleTextColor="@android:color/white"
-            app:menu="@menu/main_menu"
-            tools:ignore="MissingConstraints" />
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical"><![CDATA[
+
+            />
+
+            ]]>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1A566B"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:title="       QuickList"
+                app:titleTextColor="@color/white" />
+
+            <ListView
+                android:id="@+id/lsvDados"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="140px"
+            android:layout_height="120px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            app:srcCompat="@drawable/logosemtitulo" />
+
+        <TextView
+            android:id="@+id/txtnaohaitem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Não há item na lista"
+            android:textColor="@color/ic_launcher_background"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/ImgInsiraItem"
+            android:layout_width="205dp"
+            android:layout_height="216dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginBottom="100dp"
+            app:srcCompat="@drawable/insiraitem" />
+    </FrameLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
