@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
             Cliente clienteClicado = (Cliente) parent.getItemAtPosition(position);
 
             // Exemplo: Mostrar o nome do cliente ou abrir uma nova tela
-            Toast.makeText(MainActivity.this, "Clicou em: " + clienteClicado.getNome(), Toast.LENGTH_SHORT).show();
+           it =  new Intent(getApplicationContext(), Manutencao.class);
+           startActivity(it);
         });
     }
     //inicializa o menu e puxa ele

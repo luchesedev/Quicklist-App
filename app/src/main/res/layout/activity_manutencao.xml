@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".AdicionarCliente">
+    tools:context=".Manutencao">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -107,20 +106,35 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="50dp"
                 android:orientation="vertical">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnsalvar"
+                    android:id="@+id/btnAlterar"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginHorizontal="20dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Salvar Cliente"
+                    android:text="Alterar Cliente"
                     android:textColor=" #1A566B"
                     app:backgroundTint="@color/white"
                     app:cornerRadius="12dp"
                     app:icon="@android:drawable/ic_menu_save"
+                    app:iconGravity="textStart"
+                    app:iconTint="#1A566B"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="2dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnExcluir"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Excluir Cliente"
+                    android:textColor=" #1A566B"
+                    app:backgroundTint="@color/white"
+                    app:cornerRadius="12dp"
+                    app:icon="@android:drawable/ic_menu_delete"
                     app:iconGravity="textStart"
                     app:iconTint="#1A566B"
                     app:strokeColor="@color/white"
@@ -155,7 +169,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="90dp"
             android:gravity="center"
-            android:text="Cadastro de Cliente"
+            android:text="Manutenção do Cliente"
             android:textColor="@color/white"
             android:textSize="24sp" />
     </FrameLayout>

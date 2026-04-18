@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BdListview">
         <activity
+            android:name=".Manutencao"
+            android:exported="false" />
+        <activity
             android:name=".AdicionarCliente"
             android:exported="false" />
         <activity
