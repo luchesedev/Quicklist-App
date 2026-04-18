@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.widget.Toolbar;
 
@@ -53,7 +54,12 @@ public class MainActivity extends AppCompatActivity {
         imgInsiraItem.setVisibility(GONE);
         // fonte de dados
         List<Cliente> clientes = new ArrayList<Cliente>();
-
+        clientes.add(new Cliente(1,"pedro","pedroluchese@gmail.com"));
+        clientes.add(new Cliente(1,"asdasd","pedroluchese@gmail.com"));
+        clientes.add(new Cliente(1,"cururu","pedroluchese@gmail.com"));
+        clientes.add(new Cliente(1,"jureia","pedroluchese@gmail.com"));
+        clientes.add(new Cliente(1,"joao","pedroluchese@gmail.com"));
+        clientes.add(new Cliente(1,"v","pedroluchese@gmail.com"));
 
         ArrayAdapter<Cliente> adaptador = new ArrayAdapter<Cliente>(
                 this, android.R.layout.simple_list_item_1, clientes);
@@ -63,6 +69,13 @@ public class MainActivity extends AppCompatActivity {
             txtNaohaitem.setVisibility(VISIBLE);
             imgInsiraItem.setVisibility(VISIBLE);
         }
+        lsvDados.setOnItemClickListener((parent, view, position, id) -> {
+            // Pega o objeto que foi clicado
+            Cliente clienteClicado = (Cliente) parent.getItemAtPosition(position);
+
+            // Exemplo: Mostrar o nome do cliente ou abrir uma nova tela
+            Toast.makeText(MainActivity.this, "Clicou em: " + clienteClicado.getNome(), Toast.LENGTH_SHORT).show();
+        });
     }
     //inicializa o menu e puxa ele
     @Override
