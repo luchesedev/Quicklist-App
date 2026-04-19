@@ -28,12 +28,33 @@
                 app:title="       QuickList"
                 app:titleTextColor="@color/white" />
 
+            <TextView
+                android:id="@+id/txtLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lista"
+                android:textColor="#1A566B"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/linha_preta_embaixo" />
+
             <ListView
                 android:id="@+id/lsvDados"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:dividerHeight="1dp"
+                android:divider="@color/black"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:scrollbarStyle="outsideOverlay"
+                >
 
             </ListView>
+
         </LinearLayout>
 
         <ImageView
@@ -49,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="130dp"
             android:text="Não há item na lista"
             android:textColor="@color/ic_launcher_background"
             android:textSize="24sp" />
@@ -59,7 +80,6 @@
             android:layout_width="205dp"
             android:layout_height="216dp"
             android:layout_gravity="center|center_horizontal"
-            android:layout_marginBottom="100dp"
             app:srcCompat="@drawable/insiraitem" />
 
     </FrameLayout>

@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BdListview">
         <activity
+            android:name=".TelaInicial"
+            android:exported="true"> <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
             android:name=".Manutencao"
             android:exported="false" />
         <activity
@@ -19,12 +26,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

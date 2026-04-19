@@ -43,6 +43,7 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/hintCodigo"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
@@ -51,10 +52,11 @@
                         android:hint="ID:"
                         android:textColorHint="@color/white"
                         app:boxStrokeColor="@color/white"
-                        app:boxStrokeWidthFocused="2dp">
+                        app:boxStrokeWidthFocused="2dp"
+                       >
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editNome"
+                            android:id="@+id/editCodigo1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="number" />
@@ -62,6 +64,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/hintNome"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
@@ -70,10 +73,13 @@
                         android:hint="Nome:"
                         android:textColorHint="@color/white"
                         app:boxStrokeColor="@color/white"
-                        app:boxStrokeWidthFocused="2dp">
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconDrawable="@android:drawable/ic_menu_edit"
+                        app:endIconMode="custom"
+                        app:endIconTint="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editNome"
+                            android:id="@+id/editNome1"
                             android:layout_width="300dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -82,6 +88,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/hintEmail"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="300dp"
                         android:layout_height="wrap_content"
@@ -90,10 +97,13 @@
                         android:hint="Email:"
                         android:textColorHint="@color/white"
                         app:boxStrokeColor="@color/white"
-                        app:boxStrokeWidthFocused="2dp">
+                        app:boxStrokeWidthFocused="2dp"
+                        app:endIconDrawable="@android:drawable/ic_menu_edit"
+                        app:endIconMode="custom"
+                        app:endIconTint="@color/white">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/editEmail"
+                            android:id="@+id/editEmail1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:inputType="textPersonName" />
@@ -172,5 +182,6 @@
             android:text="Manutenção do Cliente"
             android:textColor="@color/white"
             android:textSize="24sp" />
+
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

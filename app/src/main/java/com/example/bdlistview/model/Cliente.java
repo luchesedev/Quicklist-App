@@ -1,10 +1,12 @@
-package com.example.bdlistview;
+package com.example.bdlistview.model;
 
 import androidx.annotation.NonNull;
 
-public class Cliente {
+import java.io.Serializable;
+
+public class Cliente implements Serializable {
     //atributos
-    private int codigo;
+    private Integer codigo;
     private String nome;
     private String email;
 
@@ -20,11 +22,11 @@ public class Cliente {
         this.email = email;
     }
 
-    public int getCodigo() {
+    public Integer getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(Integer codigo) {
         this.codigo = codigo;
     }
 
@@ -47,9 +49,9 @@ public class Cliente {
     @NonNull
     @Override
     public String toString() {
-        String mensagem = "Código: " + codigo +
-                "\n Nome: " + nome +
-                "\n Email: " + email;
+        String mensagem = "\n|Código:|" + codigo +
+                "\n|Nome:| " + nome +
+                "\n|Email:| " + email+" \n";
         return mensagem;
     }
 }
